@@ -4,15 +4,21 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun run --watch src/index.ts"
-  },
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
+    "dev": "bun --watch run src/index.tsx",
+    "start": "bun run src/index.tsx",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@opentui/core": "^0.1.95"
+    "@opentui/core": "^0.1.97",
+    "@opentui/react": "^0.1.97",
+    "react": "^19.1.1",
+    "youtubei.js": "^17.0.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.1.11",
+    "typescript": "^5.9.2"
   }
 }
